@@ -1,0 +1,109 @@
+# Table Rowspan And Colspan In HTML Explained (With Examples)
+
+Read more: https://html.com/tables/rowspan-colspan/#ixzz7dVhKbTic
+
+https://html.com/tables/rowspan-colspan/
+
+<th>— 表头 — 中的标题单元格<table>。
+<td>— 表格数据 — 中的数据单元格<table>。
+做什么colspan=？
+允许单个表格单元格跨越多个单元格或列的宽度。
+做什么rowspan=？
+允许单个表格单元格跨越多个单元格或行的高度。
+为什么使用colspan=or rowspan=？
+有时，一个单元格跨越多列或多行是有意义的。这可能用于标题一组列的标题单元格，或将条目行分组的侧边栏。
+两者colspan=和rowspan=都是两个表格单元格元素的属性，<th>和<td>。它们提供与 Excel 等电子表格程序中的“合并单元格”相同的功能。
+
+任一属性的值必须是正整数（整数）。该值指定单元格填充的列数或行数。
+
+
+
+1. 用于colspan=多列标题
+<table>
+ <caption>Life Expectancy By Current Age</caption>
+ <tr>
+  <th colspan="2">65</th>
+  <th colspan="2">40</th>
+  <th colspan="2">20</th>
+ </tr>
+ <tr>
+  <th>Men</th>
+  <th>Women</th>
+  <th>Men</th>
+  <th>Women</th>
+  <th>Men</th>
+  <th>Women</th>
+ </tr>
+ <tr>
+  <td>82</td>
+  <td>85</td>
+  <td>78</td>
+  <td>82</td>
+  <td>77</td>
+  <td>81</td>
+ </tr>
+</table>
+
+2. 用于单行colspan=标题
+
+<table>
+ <caption>Invoice</caption>
+ <tr>
+  <th>Item / Desc.</th>
+  <th>Qty.</th>
+  <th>@</th>
+  <th>Price</th>
+ </tr>
+ <tr>
+  <td>Paperclips (Box)</td>
+  <td>100</td>
+  <td>1.15</td>
+  <td>115.00</td>
+ </tr>
+ <tr>
+  <td>Paper (Case)</td>
+  <td>10</td>
+  <td>45.99</td>
+  <td>459.90</td>
+ </tr>
+ <tr>
+  <td>Wastepaper Baskets</td>
+  <td>2</td>
+  <td>17.99</td>
+  <td>35.98</td>
+ </tr>
+ <tr>
+  <th colspan="3">Subtotal</th>
+  <td>610.88</td>
+ </tr>
+ <tr>
+  <th colspan="2">Tax</th>
+  <td>7%</td>
+  <td>42.76</td>
+ </tr>
+ <tr>
+  <th colspan="3">Total</th>
+  <td>653.64</td>
+ </tr>
+</table>
+
+
+
+# CSS border-top-color Property
+Example
+Set a color for the top border:
+div {border-top-color: coral;}
+
+Example
+Set a color for the top border with a HEX value:
+div {border-top-color: #92a8d1;}
+
+Example
+Set a transparent top border:
+div {border-top-color: transparent;}
+
+https://www.w3schools.com/cssref/pr_border-top_color.asp
+
+
+
+
